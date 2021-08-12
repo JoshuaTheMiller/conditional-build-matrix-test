@@ -22,3 +22,5 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix: ${{fromJson(needs.matrix_prep.outputs.matrix.config)}}
+    steps:
+      - run: "echo hello"
