@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.5.0    
       - id: set-matrix
-        uses: JoshuaTheMiller/conditional-build-matrix@c770809f02f69491013b802de9650cdcdbac6dc4
+        uses: JoshuaTheMiller/conditional-build-matrix@stage
         with:
           inputFile: '.github/workflows/matrix_includes.json' # Defaults to 'matrix_includes.json'
           filter: '[?runOn==`${{ github.ref }}` || runOn==`always`]'   
